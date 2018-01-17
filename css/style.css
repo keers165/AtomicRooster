@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700 | Exo:100,200,300,400,500,600,700 | Anton:400');
+
+
+/*----------general------*/
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*----------containers------*/
+
+.container-header, .container-section, .container-footer {
+    margin: 0;
+}
+
+/*----------header------*/
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #debfbf;
+}
+
+/*----------header social links------*/
+.social-header {
+    margin: 30px auto;
+    padding: 0;
+    text-align:center;
+}
+
+.icon {
+	position:relative;
+	text-align:center;
+	width: 40px;
+	height: 40px;
+	padding:20px;
+	border-radius: 50%;
+	color:#FFFFFF;
+}
+.icon i {
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+}
+.icon.social {
+	float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:#6d6e71 ;
+	color:#262626;
+	transition: all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+}
+	
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+}
+.icon.social.tw i {
+	left:11px;
+}
+.icon.social.in i {
+	left:11px;
+}
+
+.img-header {
+    width: 100%;
+    height: auto;
+}
+
+.img-section {
+    width: 100%;
+    height: auto;
+}
+
+.jumbotron {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+.bandname {
+    font-family: "Roboto Slab ", serif;
+    font-weight: 700;
+
+}
+/*
+h1 img {}
+*/
+.founders {
+    font-family: "Exo";
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.anniversary {
+    font-family: "Exo";
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+/*----------header navigation menu------*/
+
+.navbar {
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar-toggle {
+    position: absolute;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+
+
+.menulist {
+       margin-bottom: 20px;
+}
+
+.menuitem a {
+    text-decoration: none;
+    color: #000;
+    font-family: Exo;
+    font-weight: 500;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*----------News------*/
+
+.container-news {
+    display: block;
+    min-height: 700px;
+    width: 100%;
+    position: relative;
+    background-color: #c0bbba;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+h2 {
+    font-family: Anton, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+/*----------Catalogue------*/
+
+.container-catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.album-section {
+  background-color: #f1f1f1;
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/*----------footer------*/
+
+.container-footer {
+    min-height: 200px;
+    position: relative;
+    background-color: #debfbf;
+}
+
+.social-footer {
+     margin:50px auto;
+     text-align:center;
+
+} 
+
+.bandname-footer {
+    font-family: "Roboto Slab";
+    font-size: 25px;
+}
+
+h3 img {
+    width: 25px;
+    height: 25px;
+}
+
+.founders-footer {
+    font-family: "Exo";
+    font-size: 15px;
+    font-weight: 400;
+}
