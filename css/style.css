@@ -22,6 +22,44 @@
     background-color: #debfbf;
 }
 
+.img-header {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+.jumbotron {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+.bandname {
+    font-family: "Roboto Slab ", serif;
+    font-weight: 700;
+
+}
+/*
+h1 img {}
+*/
+.founders {
+    font-family: "Exo";
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.anniversary {
+    font-family: "Exo";
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
 /*----------header social links------*/
 .social-header {
     margin: 30px auto;
@@ -67,44 +105,7 @@
 	left:11px;
 }
 
-.img-header {
-    width: 100%;
-    height: auto;
-}
 
-.img-section {
-    width: 100%;
-    height: auto;
-}
-
-.jumbotron {
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    color: #000;
-}
-
-.bandname {
-    font-family: "Roboto Slab ", serif;
-    font-weight: 700;
-
-}
-/*
-h1 img {}
-*/
-.founders {
-    font-family: "Exo";
-    font-size: 25px;
-    font-weight: 400;
-    margin-top: 5px;
-}
-
-.anniversary {
-    font-family: "Exo";
-    font-size: 50px;
-    font-weight: 400;
-    margin-bottom: 50px;
-}
 
 /*----------header navigation menu------*/
 
@@ -140,7 +141,7 @@ h1 img {}
     color: #000;
     font-family: Exo;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -167,20 +168,111 @@ h2 {
 }
 
 /*----------Catalogue------*/
+.container-wrapper {
+    margin: 0;
+    background-color: DodgerBlue;
+    text-align: center;
+}
 
 .container-catalogue {
   display: flex;
   flex-wrap: wrap;
-  background-color: DodgerBlue;
+}
+
+.catalogue-header{
+    padding-top: 30px;
+    margin: 0;
+}
+
+
+.p-catalogue {
+    padding-bottom: 50px;
 }
 
 .album-section {
-  background-color: #f1f1f1;
-  width: 400px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+    position: relative;
+    width: 350px;
+    margin: 10px;
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+
+.img-album {opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    backface-visibility: hidden;
+}
+    
+.centered {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.album-section:hover .img-album {
+  opacity: 0.5;
+}
+
+.album-section:hover .centered {
+  opacity: 1;
+}
+
+.text {
+  background-color: transparent;
+  color: black;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 16px 32px;
+} 
+
+/*----------Dates------*/
+
+.container-dates {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.header-dates {
+    text-align: center;
+}
+
+.row-caption {
+    text-transform: uppercase;
+    font-family: Exo, sans-serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.row-dates {
+    min-height: 200px;
+    padding-bottom: 10px;
+}
+
+.col-img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.col02-dates, .col03-dates, .col04-dates {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 /*----------footer------*/
