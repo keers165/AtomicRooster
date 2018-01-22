@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700 | Exo:100,200,300,400,500,600,700 | Anton:400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700 |Fascinate+Inline| Exo:100,200,300,400,500,600,700 | Anton:400');
 
 
 /*----------general------*/
@@ -6,6 +6,13 @@
 .uppercase {
     text-transform: uppercase;
 }
+
+h2 {
+    font-family: 'Fascinate Inline', cursive;
+    font-weight: 400;
+    font-size: 50px;
+}
+
 
 /*----------containers------*/
 
@@ -38,9 +45,8 @@
 }
 
 .bandname {
-    font-family: "Roboto Slab ", serif;
-    font-weight: 700;
-
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 50px;
 }
 /*
 h1 img {}
@@ -161,11 +167,6 @@ h1 img {}
     text-align: center;
 }
 
-h2 {
-    font-family: Anton, sans-serif;
-    font-weight: 400;
-    font-size: 50px;
-}
 
 /*----------Catalogue------*/
 .container-wrapper {
@@ -275,6 +276,34 @@ h2 {
     vertical-align: middle;
 }
 
+/*----------History------*/
+.header-history {
+    text-align: center;
+}
+
+.brief-h {
+    text-align: center;
+}
+
+.col-bm {
+    background-color: grey;
+}
+
+
+.container-band {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.row-band-members {
+    padding-bottom: 30px;
+}
+
+.img-band {
+    width: 100%;
+    height: auto;
+}
+
 /*----------footer------*/
 
 .container-footer {
@@ -290,7 +319,7 @@ h2 {
 } 
 
 .bandname-footer {
-    font-family: "Roboto Slab";
+    font-family: 'Fascinate Inline', cursive;
     font-size: 25px;
 }
 
@@ -303,4 +332,8 @@ h3 img {
     font-family: "Exo";
     font-size: 15px;
     font-weight: 400;
+}
+
+@media(min-width:992px) {
+    
 }
