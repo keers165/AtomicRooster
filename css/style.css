@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700 |Fascinate+Inline| Exo:100,200,300,400,500,600,700 | Anton:400');
 
+body {
+    font-family: "Roboto Slab", sans-serif;
+}
 
 /*----------general------*/
 
@@ -13,20 +16,47 @@ h2 {
     font-size: 50px;
 }
 
+.row {
+    margin: 0;
+}
 
 /*----------containers------*/
 
 .container-header, .container-section, .container-footer {
     margin: 0;
+    padding: 0;
+}
+
+
+.container-section {
+    width: 100%;
+    background: url(../assets/images/Red-Cloud-1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(5, 75, 94, 0.5);
 }
 
 /*----------header------*/
 
 .container-header {
+    height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
-    background-color: #debfbf;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fafafa;
 }
 
 .img-header {
@@ -34,8 +64,6 @@ h2 {
     height: auto;
     margin-bottom: 10px;
 }
-
-
 
 .jumbotron {
     padding: 0;
@@ -48,9 +76,7 @@ h2 {
     font-family: 'Fascinate Inline', cursive;
     font-size: 50px;
 }
-/*
-h1 img {}
-*/
+
 .founders {
     font-family: "Exo";
     font-size: 25px;
@@ -92,12 +118,16 @@ h1 img {}
 	float:left;
 	margin:0 5px 0 0;
 	cursor:pointer;
-	background:#6d6e71 ;
-	color:#262626;
+	background-color: #6d6e71 ;
+	color: #fafafa;
 	transition: all 0.5s ease-in-out;
 	-moz-transition:all 0.5s ease-in-out;
 	-webkit-transition:all 0.5s ease-in-out;
 	-o-transition:all 0.5s ease-in-out;
+}
+
+.icon.social:hover {
+	background-color: #78449c;
 }
 	
 .icon.social.fb i {
@@ -124,32 +154,140 @@ h1 img {}
     border: 0;
 }
 
-.navbar-toggle {
-    position: absolute;
+.navbar-brand {
+    padding: 10px 
+}
+
+.img-logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    border: hidden;
+    transition: all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+       color: #e0aaaa;
 }
 
 .navbar-default .navbar-toggle:hover {
-    background-color: black;
+    background-color: #9e5a5a;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
 
+.navbar-default .navbar-collapse {
+    border-color: transparent
+    
+}
 
+#navbarCollapse {
+    position: absolute;
+    z-index: 1;
+}
 
 .menulist {
        margin-bottom: 20px;
+       padding-left: 30px;
 }
 
 .menuitem a {
     text-decoration: none;
-    color: #000;
+    color: #fafafa;
     font-family: Exo;
     font-weight: 500;
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+/*----------CTA------*/
+
+.container-cta {
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
+}
+
+.cta-p-info {
+    margin-top: 30px;
+}
+
+.col-cta-meet-the-band {
+    text-align: center;
+    padding: 0;
+}
+
+.col-cta-bandmember {
+   text-align: center;
+   margin: 2em 0 0 0;
+   padding: 0;
+}
+
+.col-band-member {
+    width: 100%;
+    height: auto;
+}
+
+.cta-p-info {
+    text-align: center;
+    font-family: Exo;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+.cta-p-info a {
+    text-decoration: none;
+    font-family: Exo;
+    font-size: 20px;
+    font-weight: bold;
+    color: #108410;
+}
+
+.col-cta-special-guest {
+    text-align: center;
+    padding: 0;
+    margin-bottom:30px;
+}
+
+.img-cta-special-guest {
+    width: 100%;
+    height: auto;
+}
+
+.col-cta-festivals {
+    text-align: center;
+}
+
+.col-cta-festival-logo {
+    padding: 10px;
+}
+
+.img-cta-festivals {
+    min-height: 150px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 /*----------News------*/
@@ -199,7 +337,8 @@ h1 img {}
     font-size: 30px;
 }
 
-.img-album {opacity: 1;
+.img-album {
+    opacity: 1;
     display: block;
     width: 100%;
     height: auto;
@@ -215,8 +354,11 @@ h1 img {}
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     transition: all 500ms ease-in-out;
     -moz-transition: all 500ms ease-in-out;
@@ -305,15 +447,13 @@ h1 img {}
 }
 
 
-    
-}
-
 /*----------footer------*/
 
 .container-footer {
     min-height: 200px;
     position: relative;
-    background-color: #debfbf;
+    background-color: #5a2b32;
+    color: #fafafa;
 }
 
 .social-footer {
@@ -324,7 +464,7 @@ h1 img {}
 
 .bandname-footer {
     font-family: 'Fascinate Inline', cursive;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 h3 img {
@@ -334,8 +474,33 @@ h3 img {
 
 .founders-footer {
     font-family: "Exo";
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 400;
+}
+
+/* Buttons */
+.btn--cta {
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+.btn--green {
+    color: #fafafa;
+    background-color: #108410;
+    border-color: #108410;
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.btn--green:hover,
+.btn--green:active,
+.btn--green:focus,
+.btn--green:active:focus {
+    background-color: #438643;
+    border-color: #438643;
+    color: #fafafa;
 }
 
 @media(min-width:992px) {
