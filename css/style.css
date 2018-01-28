@@ -92,7 +92,7 @@ h2 {
 }
 
 
-/*----------header social links------*/
+/*----------social links------*/
 .social-header {
     margin: 30px auto;
     padding: 0;
@@ -140,8 +140,6 @@ h2 {
 .icon.social.in i {
 	left:11px;
 }
-
-
 
 /*----------header navigation menu------*/
 
@@ -284,10 +282,10 @@ h2 {
 }
 
 .img-cta-festivals {
-    min-height: 150px;
     width: 100%;
-    padding: 0;
-    margin-bottom: 20px;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
 /*----------News------*/
@@ -383,39 +381,54 @@ h2 {
   padding: 16px 32px;
 } 
 
-/*----------Dates------*/
+/*----------Festivals------*/
 
 .container-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
     margin: 0;
-    padding-bottom: 50px;
 }
 
-.header-dates {
+.col-dates-header {
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
 }
 
-.row-caption {
-    text-transform: uppercase;
-    font-family: Exo, sans-serif;
-    font-weight: 500;
-    padding-bottom: 20px;
-}
-
-.row-dates {
-    min-height: 200px;
-    padding-bottom: 10px;
-}
-
-.col-img {
-    width: 100%;
-    height: auto;
+.col-dates-festivals {
     padding: 0;
     margin: 0;
 }
 
-.col02-dates, .col03-dates, .col04-dates {
-    display: table-cell;
-    vertical-align: middle;
+.col-dates-logo {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.col-img-festivals {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.col-dates-type {
+    font-family: Exo;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.col-dates-info {
+    font-family: Exo;
+    font-weight: 300;
+    font-size: 15px;
 }
 
 /*----------History------*/
@@ -427,25 +440,41 @@ h2 {
     text-align: center;
 }
 
-.col-bm {
-    background-color: grey;
-}
-
+/*----------Band------*/
 
 .container-band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff700d;
+    color: #fafafa;
     margin: 0;
-    padding-bottom: 50px;
+    padding: 0;
+}
+
+.section-bandmembers {
+    width: 100%;
+    min-height: 100%;
+    display:table;
+    height:inherit;    
 }
 
 .row-band-members {
-    padding-bottom: 30px;
+    display: table-row;
 }
 
-.img-band {
-    width: 100%;
-    height: auto;
+.col-bandmembers-data, .img-bandmembers {
+    text-align: left;
+    display:table-cell;
+    vertical-align: middle;
+    border: 1px dashed red;
 }
 
+.col-bandmembers {
+   margin-top: 30px;
+   margin-bottom: 20px
+}
 
 /*----------footer------*/
 
@@ -503,6 +532,18 @@ h3 img {
     color: #fafafa;
 }
 
-@media(min-width:992px) {
-    
+/* Block dividers */
+.block-divider {
+    width: 125px;
+    height: 5px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.block-divider--green {
+    background-color: #108410
+}
+
+@media(min-width:768x) {
+
 }

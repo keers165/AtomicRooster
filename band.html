@@ -12,28 +12,31 @@
     <title>MileStone</title>
 </head>
 <body>
-    <div class="container-fluid container-header">
+<!-- Header -->
+    <div class="container-section">
+        <div class="opaque-overlay">&nbsp;</div>
+<!-- Navigation -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                       <span class="sr-only">Toggle navigation</span> 
-                       <span class="icon-bar"></span> 
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand"></a>
+                    <a href="#" class="navbar-brand"><img class="img-logo" src="assets/images/rooster.png" alt="Logo"></a>
                 </div>
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav menulist">
                         <li class="menuitem">
-                            <a class="_target" href="index.html"> News</a>
+                            <a class="_target" href="index.html"> Home </a>
                         </li>
                         <li class="menuitem">
                             <a class="_target" href="band.html"> Band</a>
                         </li>
                         <li class="menuitem">
-                            <a class="_target" href="dates.html"> Dates</a>
+                            <a class="_target" href="dates.html"> Festivals </a>
                         </li>
                         <li class="menuitem">
                             <a class="_target" href="catalogue.html"> Back Catalogue</a>
@@ -45,81 +48,131 @@
                 </div>
             </div>
         </nav>
-        
-            <h1 class="bandname text-center jumbotron uppercase">Atomic <span><img src="assets/images/rooster.png"></img></span> Rooster </h1>
-            <h3 class="founders text-center uppercase">Vince Crane (RIP)</h3>
-            <h2 class="anniversary text-center">50th Anniversary Festival Tour</h2>
+<!-- Header Start-->
+        <div class="container-fluid container-header"> 
             
-        <div class="row">
-            <div class="col-xs-12 col-sm-12">
-                <div class="social-header">
-                    <p >Follow ATOMIC ROOSTER 50th Anniversary Festival Tour On</p>
-                    <ul class="list-inline social-links">
-                        <li><a target="_blank" class="icon social fb" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" class="icon social tw" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" class="icon social in" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+                <h1 class="bandname text-center uppercase">Atomic Rooster </h1>
+                <h4 class="founders text-center uppercase">Vince Crane (RIP)</h4>
+                <h3 class="anniversary text-center">2018<br>50th Anniversary Festival Tour</h3>
+<!--SocialLinks - commented out          
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="social-header">
+                        <p >Follow ATOMIC ROOSTER 50th Anniversary Testival Tour On</p>
+                        <ul class="list-inline social-links">
+                            <li><a target="_blank" class="icon social fb" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" class="icon social tw" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" class="icon social in" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+--/SocialLinks -->
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-img-header">
+                    <img class="img-responsive img-header" src="/assets/images/Atomic-Rooster_Interview-2.jpg" alt="Atomic Rooster 2016"></img>
                 </div>
             </div>
         </div>
-        
-        <img class="img-header" src="assets/images/reading-81-rooster-2-sv.jpg"></img>
-        
     </div>
     
+<!-- Detail -->    
     <div class="container-fluid container-band">
         <div class="row">
             <div> 
-            <h2 class="text-center uppercase band-header">Atomic Rooster 2016</h2>
-            </div>
-        
-            <div class="col-xs-10 col-xs-offset-1 brief-h">
-                <figure class="fig-band hidden-xs">
-                    <img class="img-band" src="/assets/images/Atomic-Rooster_Interview-2.jpg" alt="Atomic Rooster 2016"></img>
-                    <figcaption><strong> Bo Walsh, Steve Bolton, Pete French, Shug Millidge, Christian Madden</strong></figcaption>
-                </figure>
+            <h2 class="text-center uppercase band-header">the band 2016</h2>
+            <p class="p-bandmembers">This is the 3rd re-incarnation of the band and was only reformed afer permission was received 
+            from the widow of Vincent Crane</p>
             </div>
         </div>    
-
-        <div class="row band-members">
-            <div class="col-xs-12 col-bm">
-                <img class="col-xs-6 img-responsive img-circle img-bm" src="../assets/images/stevebolton.jpg" alt="Steve Bolton"></img>
-                 <div class="col-xs-6 col-bm-data">
-                     <p>help me </p>
+        <div class="section-bandmembers">
+            <div class="row row-band-members">
+                <div class="col-xs-12 col-bandmembers">
+                    <img class="col-xs-12 col-sm-6 img-responsive img-circle img-bandmembers" src="../assets/images/stevebolton.jpg" alt="Steve Bolton"></img>
+                    <div class="col-xs-12 col-sm-6 col-bandmembers-data">
+                        <div class="col-xs-3">Name</div>
+                        <div class="col-xs-9">Steve (Boltz) Bolton</div>
+                        <div class="col-xs-3">Born</div>
+                        <div class="col-xs-9">1949:- <br>Manchester, England</div>
+                        <div class="col-xs-3">Position</div>
+                        <div class="col-xs-9">Lead Guitar</div>
+                        <div class="col-xs-3">Bands</div>
+                        <div class="col-xs-9">The Dimension, <br>Atomic Rooster, <br>Headstone</div>
+                        <div class="col-xs-3">History</div>
+                        <div class="col-xs-9">1971 - 1972, <br>2016 - present</div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="col-xs-12 col-bm">
-                <img class="col-xs-6 img-responsive img-circle img-bm" src="assets/images/petefrench.png" alt="Pete French"></img>
-                <div class="col-xs-6 col-bm-data">
-                    
+                <div class="col-xs-12 col-bandmembers">
+                    <img class="col-xs-12 col-sm-6 img-responsive img-circle img-bandmembers" src="assets/images/petefrench.png" alt="Pete French"></img>
+                    <div class="col-xs-12 col-sm-6 col-bandmembers-data">
+                        <div class="col-xs-3">Name</div>
+                        <div class="col-xs-9">Pete French</div>
+                        <div class="col-xs-3">Born</div>
+                        <div class="col-xs-9">1949</div>
+                        <div class="col-xs-3">Position</div>
+                        <div class="col-xs-9">Vocalist</div>
+                        <div class="col-xs-3">Bands</div>
+                        <div class="col-xs-9">Leaf Hound, <br>Atomic Rooster, <br>Cactus</div>
+                        <div class="col-xs-3">History</div>
+                        <div class="col-xs-9">1971 - 1972, <br>2016 - present</div>    
+                    </div>
                 </div>
-            <div class="col-xs-12 col-bm">
-                <img class="col-xs-6 img-responsive img-circle img-bm" src="assets/images/bowalsh.png" alt="Bo Walsh></img>
-                <div class="col-xs-6 col-bm-data">
-                
+                <div class="col-xs-12 col-bandmembers">
+                    <img class="col-xs-12 col-sm-6 img-responsive img-circle img-bandmembers" src="assets/images/bowalsh.png" alt="Bo Walsh"></img>
+                    <div class="col-xs-12 col-sm-6 col-bandmembers-data">
+                        <div class="col-xs-3">Name</div>
+                        <div class="col-xs-9">Bo Walsh</div>
+                        <div class="col-xs-3">Born</div>
+                        <div class="col-xs-9">1982</div>
+                        <div class="col-xs-3">Position</div>
+                        <div class="col-xs-9">Drummer</div>
+                        <div class="col-xs-3">Bands</div>
+                        <div class="col-xs-9">Travis, <br>Gabrielles Wish, <br>Atomic Rooster</div>
+                        <div class="col-xs-3">History</div>
+                        <div class="col-xs-9">2016 - present</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-bm">
-                <img class="col-xs-6 img-responsive img-circle img-bm" src="assets/images/shugmillidge.png" alt="Shug Millidge"></img>
-                <div class="col-xs-6 col-bm-data">
-                
+                <div class="col-xs-12 col-bandmembers">
+                    <img class="col-xs-12 col-sm-6 img-responsive img-circle img-bandmembers" src="assets/images/shugmillidge.png" alt="Shug Millidge"></img>
+                    <div class="col-xs-12 col-sm-6 col-bandmembers-data">
+                        <div class="col-xs-3">Name</div>
+                        <div class="col-xs-9">Shug Millidge</div>
+                        <div class="col-xs-3">Born</div>
+                        <div class="col-xs-9">1950?</div>
+                        <div class="col-xs-3">Position</div>
+                        <div class="col-xs-9">Bass Guitar</div>
+                        <div class="col-xs-3">Bands</div>
+                        <div class="col-xs-9">Clitherroe Guitar Groups, Sessionist</div>
+                        <div class="col-xs-3">History</div>
+                        <div class="col-xs-9">2016 - present</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-bm">
-                <img class="col-xs-6 img-responsive img-circle img-bm" src="assets/images/christianmadden.png" alt="Christian Madden"></img>
-                <div class="col-xs-6 col-sm-3 col-bm-data">
-                
+                <div class="col-xs-12 col-bandmembers">
+                    <img class="col-xs-12 col-sm-6 img-responsive img-circle img-bandmembers" src="assets/images/christianmadden.png" alt="Christian Madden"></img>
+                    <div class="col-xs-12 col-sm-6 col-bandmembers-data">
+                        <div class="col-xs-3">Name</div>
+                        <div class="col-xs-9">Christian Madden</div>
+                        <div class="col-xs-3">Born</div>
+                        <div class="col-xs-9">1960?</div>
+                        <div class="col-xs-3">Position</div>
+                        <div class="col-xs-9">Keyboard</div>
+                        <div class="col-xs-3">Bands</div>
+                        <div class="col-xs-9">Cherry Ghost, <br>Atomic Rooster</div>
+                        <div class="col-xs-3">History</div>
+                        <div class="col-xs-9">2016 - present</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
     
-    <div class="container-fluid container-footer">
+<!-- Footer -->    
+     <div class="container-fluid container-footer">
         <div class="row">
             <div class="col-xs-12 col-sm-12">
-                <h3 class="bandname-footer text-center uppercase">Atomic <span><img src="assets/images/rooster.png"></img></span> Rooster </h3>
-                <h5 class="founders-footer text-center uppercase">Vince Crane(RIP) & Carl Palmer</h5>
+                <h3 class="bandname-footer text-center uppercase">Atomic Rooster </h3>
+                <h5 class="founders-footer text-center uppercase">Vince Crane(RIP)</h5>
             </div>
             <div class="social-footer">
                 <ul class="list-inline social-links">
