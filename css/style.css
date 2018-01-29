@@ -29,6 +29,7 @@ h2 {
 
 
 .container-section {
+    height: 100vh;
     width: 100%;
     background: url(../assets/images/Red-Cloud-1.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -305,15 +306,10 @@ h2 {
 
 
 /*----------Catalogue------*/
-.container-wrapper {
-    margin: 0;
-    background-color: DodgerBlue;
-    text-align: center;
-}
-
 .container-catalogue {
-  display: flex;
-  flex-wrap: wrap;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
 }
 
 .catalogue-header{
@@ -321,18 +317,25 @@ h2 {
     margin: 0;
 }
 
-
 .p-catalogue {
     padding-bottom: 50px;
 }
 
+.container-albums {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .album-section {
-    position: relative;
-    width: 350px;
-    margin: 10px;
-    color: red;
-    text-align: center;
-    font-size: 30px;
+    padding: 10px;
+}
+
+.row-albums {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 10px
 }
 
 .img-album {
@@ -380,6 +383,14 @@ h2 {
   font-weight: 500;
   padding: 16px 32px;
 } 
+
+.col-album-sleeve,  .col-albums-data {
+    margin: 15px;
+}
+
+.ol-album-tracks {
+    list-style-type: decimal;
+}
 
 /*----------Festivals------*/
 
@@ -454,27 +465,27 @@ h2 {
 }
 
 .section-bandmembers {
+    margin: 10px;
+}
+
+.row-eq-height {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.col-cta-festival-logo .col {
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.col-bandmembers-data {
     width: 100%;
-    min-height: 100%;
-    display:table;
-    height:inherit;    
 }
 
-.row-band-members {
-    display: table-row;
-}
-
-.col-bandmembers-data, .img-bandmembers {
-    text-align: left;
-    display:table-cell;
-    vertical-align: middle;
-    border: 1px dashed red;
-}
-
-.col-bandmembers {
-   margin-top: 30px;
-   margin-bottom: 20px
-}
 
 /*----------footer------*/
 

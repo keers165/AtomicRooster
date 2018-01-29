@@ -12,31 +12,35 @@
     <title>MileStone</title>
 </head>
 <body>
-    <div class="container-fluid container-header">
+    
+<!-- Header -->
+    <div class="container-section">
+        <div class="opaque-overlay">&nbsp;</div>
+<!-- Navigation -->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                       <span class="sr-only">Toggle navigation</span> 
-                       <span class="icon-bar"></span> 
-                       <span class="icon-bar"></span>
-                       <span class="icon-bar"></span>
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand"></a>
+                    <a href="#" class="navbar-brand"><img class="img-logo" src="assets/images/rooster.png" alt="Logo"></a>
                 </div>
                 <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav menulist">
                         <li class="menuitem">
-                            <a class="_target" href="index.html"> News</a>
+                            <a class="_target" href="index.html"> Home </a>
                         </li>
                         <li class="menuitem">
-                            <a class="_target" href="band.html"> Band</a>
+                            <a class="_target" href="band.html"> Band </a>
                         </li>
                         <li class="menuitem">
-                            <a class="_target" href="dates.html"> Dates</a>
+                            <a class="_target" href="dates.html"> Festivals </a>
                         </li>
                         <li class="menuitem">
-                            <a class="_target" href="catalogue.html"> Back Catalogue</a>
+                            <a class="_target" href="catalogue.html"> Discography </a>
                         </li>
                         <li class="menuitem">
                             <a class="_target" href="history.html"> History</a>
@@ -45,75 +49,193 @@
                 </div>
             </div>
         </nav>
-        
-            <h1 class="bandname text-center jumbotron uppercase">Atomic <span><img src="assets/images/rooster.png"></img></span> Rooster </h1>
-            <h3 class="founders text-center uppercase">Vince Crane (RIP)</h3>
-            <h2 class="anniversary text-center">50th Anniversary Festival Tour</h2>
+<!-- Header Start-->
+        <div class="container-fluid container-header"> 
             
-        <div class="row">
-            <div class="col-xs-12 col-sm-12">
-                <div class="social-header">
-                    <p >Follow ATOMIC ROOSTER 50th Anniversary Testival Tour On</p>
-                    <ul class="list-inline social-links">
-                        <li><a target="_blank" class="icon social fb" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" class="icon social tw" href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" class="icon social in" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
+                <h1 class="bandname text-center uppercase">Atomic Rooster </h1>
+                <h4 class="founders text-center uppercase">Vince Crane (RIP)</h4>
+                <h3 class="anniversary text-center">2018<br>50th Anniversary Festival Tour</h3>
+<!--SocialLinks - commented out          
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="social-header">
+                        <p >Follow ATOMIC ROOSTER 50th Anniversary Testival Tour On</p>
+                        <ul class="list-inline social-links">
+                            <li><a target="_blank" class="icon social fb" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" class="icon social tw" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" class="icon social in" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+--/SocialLinks -->
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-img-header">
+                    <img class="img-responsive img-header" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/old-vintage-wurlitzer-jukebox--7d13100-wingsdomain-art-and-photography.jpg"></img>
                 </div>
             </div>
         </div>
-        <img class="img-header" src="assets/images/reading-81-rooster-2-sv.jpg"></img>
-        
-    </div>
-    <div class="container-wrapper">
-        <h2 class="text-center uppercase catalogue-header">Back Catalogue</h2>    
+    </div>    
+    
+    <div class="container-fluid container-catalogue">
+        <h2 class="text-center uppercase catalogue-header">Discography</h2>    
         <p class="p-catalogue">Everything associated to Atomic Rooster HERE!!</p>
         <h4 class="uppercasee">Official Albums</h4>
-        <div class="container-flex container-catalogue">
+        <div class="container-flex container-albums">
             <div class="album-section">
-                <img class="img-album" src="assets/images/albums/ar1970.jpg" />
-                    <div class="centered">
-                        <div class="text"> Atomic RoOoster<br>Feb 1970</div>
+                <div class="row row-eq-height row-albums">
+                    <div class="col-xs-12 col-sm-6 col-album-sleeve">
+                        <img class="img-responsive img-album" src="assets/images/albums/ar1970.jpg" />
+                        <div class="centered">
+                            <div class="text"> Atomic RoOoster<br>Feb 1970</div>
+                        </div>
                     </div>
-            </div>
-            <div class="album-section">
-                <img class="img-album" src="assets/images/albums/dwbu.jpg"/>
-                    <div class="centered">
-                        <div class="text">Death Walks Behind You<br>Oct 1970</div>
+                    <div class="col-xs-12 col-sm-6 col-albums-data">
+                        <h3>Atomic Rooster - 1970</h3>
+                        <h3>Tracks</h3>
+                        <ol class="ol-album-tracks">
+                            <li>Friday The Thirteenth</li>
+                            <li>And So To Bed</li>
+                            <li>Broken Wings</li>
+                            <li>Before Tomorrow</li>
+                            <li>Banstead</li>
+                            <li>S.L.Y.</li>
+                            <li>Winter</li>
+                            <li>Decline & Fall</li>
+                        </ol>
                     </div>
-            </div>
-            <div class="album-section">
-                <img class="img-album" src="assets/images/albums/ihoar.jpg"/>
-                    <div class="centered">
-                        <div class="text">In Hearing of Atomic Rooster<br>Feb 1970</div>
+                
+                    <div class="col-xs-12 col-sm-6 col-album-sleeve">
+                        <img class="img-responsive img-album" src="assets/images/albums/dwbu.jpg"/>
+                        <div class="centered">
+                            <div class="text">Death Walks Behind You<br>Oct 1970</div>
+                        </div>
                     </div>
-            </div>
-            <div class="album-section">
-                <img class="img-album" src="assets/images/albums/madeinengland.jpg"/>
-                    <div class="centered">
-                        <div class="text">Made In England<br>Feb 1970</div>
+                    <div class="col-xs-12 col-sm-6 col-albums-data">
+                        <h3>Death Walks Behind You - 1970</h3>
+                        <h3>Tracks</h3>
+                        <ol class="ol-album-tracks">
+                            <li>Death Walks Behind You</li>
+                            <li>Vug</li>
+                            <li>Tomorrow Night</li>
+                            <li>7 Streets</li>
+                            <li>Sleeping For Years</li>
+                            <li>I Can't Take No More</li>
+                            <li>Nobody Else</li>
+                            <li>Gershatzer</li>
+                        </ol>
                     </div>
-            </div>
-            <div class="album-section">
-                <img class="img-album" src="assets/images/albums/nicengreasy.jpg"/>
-                    <div class="centered">
-                        <div class="text">Nice 'N Greasy<br>Feb 1970</div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-album-sleeve">
+                        <img class="img-responsive img-album" src="assets/images/albums/ihoar.jpg"/>
+                        <div class="centered">
+                            <div class="text">In Hearing of Atomic Rooster<br>Feb 1970</div>
+                        </div>
                     </div>
-            </div>
-            <div class="album-section">
-                <img class="img-album" src="assets/images/albums/ar-ar.jpg"/>
-                    <div class="centered">
-                        <div class="text">Atomic Rooster<br>Feb 1970</div>
+                    <div class="col-xs-12 col-sm-6 col-albums-data">
+                        <h3>In Hearing of Atomic Rooster - 1971</h3>
+                        <h3>Tracks</h3>
+                        <ol class="ol-album-tracks">
+                            <li>Breakthroughu</li>
+                            <li>Decision / Indecision</li>
+                            <li>A Spoonfull Of Bromide Helps The Pulse Rate Go Down</li>
+                            <li>Black Snake</li>
+                            <li>Head In The Sky</li>
+                            <li>The Rock</li>
+                            <li>The Price</li>
+                        </ol>
                     </div>
-            </div>
-            <div class="album-section">
-                <img class="img-album" src="assets/images/albums/headlinenews.jpg"/>
-                    <div class="centered">
-                        <div class="text">Headline News<br>Feb 1970</div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-album-sleeve">
+                        <img class="img-responsive img-album" src="assets/images/albums/madeinengland.jpg"/>
+                        <div class="centered">
+                            <div class="text">Made In England<br>1972</div>
+                        </div>
                     </div>
-            </div>
-        </div>
-        <h4 class="uppercasee">Official Singles</h4>
+                    <div class="col-xs-12 col-sm-6 col-albums-data">
+                        <h3>Made In England - 1972</h3>
+                        <h3>Tracks</h3>
+                        <ol class="ol-album-tracks">
+                            <li>Time Take My Life</li>
+                            <li>Stand By Me</li>
+                            <li>Little Bit Of Inner Air</li>
+                            <li>Don't Know What Went Wrong</li>
+                            <li>Never To Lose</li>
+                            <li>Introduction</li>
+                            <li>Breathless</li>
+                            <li>Space Cowboy</li>
+                            <li>People You Can't Trust</li>
+                            <li>All In Satan's Name</li>
+                            <li>Close Your Eyes</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-album-sleeve">
+                        <img class="img-responsive img-album" src="assets/images/albums/Nice 'n' Greasy.jpg"/>
+                        <div class="centered">
+                            <div class="text">Nice 'n' Greasy<br>1973</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-albums-data">
+                        <h3>Nice 'n' Greasy - 1973</h3>
+                        <h3>Tracks</h3>
+                        <ol class="ol-album-tracks">
+                            <li>All Across The Country</li>
+                            <li>Save Me</li>
+                            <li>Voodoo In You</li>
+                            <li>Goodbye Planet Earth</li>
+                            <li>Take One Take</li>
+                            <li>Can't Find A Reason</li>
+                            <li>Ear In The Snow</li>
+                            <li>Satan's Wheel</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-album-sleeve">
+                        <img class="img-responsive img-album" src="assets/images/albums/dwbu.jpg"/>
+                        <div class="centered">
+                            <div class="text">Death Walks Behind You<br>Oct 1970</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-albums-data">
+                        <h3>Death Walks Behind You - 1970</h3>
+                        <h3>Tracks</h3>
+                        <ol class="ol-album-tracks">
+                            <li>Death Walks Behind You</li>
+                            <li>Vug</li>
+                            <li>Tomorrow Night</li>
+                            <li>7 Streets</li>
+                            <li>Sleeping For Years</li>
+                            <li>I Can't Take No More</li>
+                            <li>Nobody Else</li>
+                            <li>Gershatzer</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-album-sleeve">
+                        <img class="img-responsive img-album" src="assets/images/albums/dwbu.jpg"/>
+                        <div class="centered">
+                            <div class="text">Death Walks Behind You<br>Oct 1970</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-albums-data">
+                        <h3>Death Walks Behind You - 1970</h3>
+                        <h3>Tracks</h3>
+                        <ol class="ol-album-tracks">
+                            <li>Death Walks Behind You</li>
+                            <li>Vug</li>
+                            <li>Tomorrow Night</li>
+                            <li>7 Streets</li>
+                            <li>Sleeping For Years</li>
+                            <li>I Can't Take No More</li>
+                            <li>Nobody Else</li>
+                            <li>Gershatzer</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>            
+
+        <h4 class="uppercase">Official Singles</h4>
     </div>
     
     <div class="container-fluid container-footer">
