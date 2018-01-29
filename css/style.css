@@ -16,6 +16,10 @@ h2 {
     font-size: 50px;
 }
 
+.h4- {
+    margin-left: 50px
+}
+
 .row {
     margin: 0;
 }
@@ -289,107 +293,39 @@ h2 {
     margin: auto;
 }
 
-/*----------News------*/
+/*----------Band------*/
 
-.container-news {
-    display: block;
-    min-height: 700px;
-    width: 100%;
-    position: relative;
-    background-color: #c0bbba;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
-}
-
-
-/*----------Catalogue------*/
-.container-catalogue {
+.container-band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #ff700d;
-    padding: 0;
     color: #fafafa;
-}
-
-.catalogue-header{
-    padding-top: 30px;
     margin: 0;
+    padding: 0;
 }
 
-.p-catalogue {
-    padding-bottom: 50px;
+.section-bandmembers {
+    margin: 10px;
 }
 
-.container-albums {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.album-section {
-    padding: 10px;
-}
-
-.row-albums {
+.row-eq-height {
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
     flex-wrap: wrap;
-    margin: 10px
 }
 
-.img-album {
-    opacity: 1;
-    display: block;
+.col-cta-festival-logo .col {
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.col-bandmembers-data {
     width: 100%;
-    height: auto;
-    transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    backface-visibility: hidden;
-}
-    
-.centered {
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-}
-
-.album-section:hover .img-album {
-  opacity: 0.5;
-}
-
-.album-section:hover .centered {
-  opacity: 1;
-}
-
-.text {
-  background-color: transparent;
-  color: black;
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 16px 32px;
-} 
-
-.col-album-sleeve,  .col-albums-data {
-    margin: 15px;
-}
-
-.ol-album-tracks {
-    list-style-type: decimal;
 }
 
 /*----------Festivals------*/
@@ -442,48 +378,123 @@ h2 {
     font-size: 15px;
 }
 
+
+/*----------Catalogue------*/
+.container-catalogue {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
+}
+
+.catalogue-header{
+    padding-top: 30px;
+    margin: 0;
+}
+
+.p-catalogue {
+    padding-bottom: 50px;
+}
+
+.h4-discog {
+    margin-left: 50px
+}
+
+.container-albums {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album-section {
+    padding: 10px;
+}
+
+.row-albums {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 10px
+}
+
+.img-album {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 10px 30px;;
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    backface-visibility: hidden;
+}
+    
+.centered {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.img-album:hover {
+  opacity: 0.5;
+}
+
+ .centered:hover {
+  opacity: 1;
+}
+
+.text {
+  background-color: grey;
+  color: black;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 16px 32px;
+} 
+
+.ol-album-tracks {
+    list-style-type: decimal;
+}
+
+.table-singles {
+    margin: 25px 30px 25px;
+}
+
+.ul-compilation {
+    margin-bottom: 50px
+}
+
+
 /*----------History------*/
+.container-history {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;   
+}
+
 .header-history {
     text-align: center;
 }
 
 .brief-h {
     text-align: center;
-}
-
-/*----------Band------*/
-
-.container-band {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ff700d;
-    color: #fafafa;
-    margin: 0;
-    padding: 0;
-}
-
-.section-bandmembers {
-    margin: 10px;
-}
-
-.row-eq-height {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    flex-wrap: wrap;
-}
-
-.col-cta-festival-logo .col {
-    display:flex;
-    align-items: center;
-    margin: 10px;
-    border: 1px solid black;
-}
-
-.col-bandmembers-data {
-    width: 100%;
 }
 
 
@@ -518,7 +529,7 @@ h3 img {
     font-weight: 400;
 }
 
-/* Buttons */
+/* Buttons and Dividers */
 .btn--cta {
     font-weight: bold;
     border-radius: 24px;
@@ -543,7 +554,6 @@ h3 img {
     color: #fafafa;
 }
 
-/* Block dividers */
 .block-divider {
     width: 125px;
     height: 5px;
