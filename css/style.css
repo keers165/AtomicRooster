@@ -26,7 +26,8 @@ h2 {
 
 /*----------containers------*/
 
-.container-header, .container-footer {
+.container-header,
+.container-footer {
     margin: 0;
     padding: 0;
 }
@@ -45,16 +46,23 @@ h2 {
     margin-bottom: 10px;
 }
 
+.img-header-festivals {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
 .wrapper {
     height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
-    background: url(../assets/images/Red-Cloud-1.jpg) no-repeat center center fixed; 
+    background: url(../assets/images/Red-Cloud-1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;    
+    background-size: cover;
 }
 
 .opaque-overlay {
@@ -79,18 +87,12 @@ h2 {
     color: #fafafa;
 }
 
-.img-header-home {
-    width: 80%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
 .bandname {
     font-family: 'Fascinate Inline', cursive;
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 30px;
-    
+
 }
 
 .anniversary {
@@ -102,52 +104,57 @@ h2 {
 
 
 /*----------social links------*/
+
 .social-header {
     margin: 30px auto;
     padding: 0;
-    text-align:center;
+    text-align: center;
 }
 
 .icon {
-	position:relative;
-	text-align:center;
-	width: 40px;
-	height: 40px;
-	padding:20px;
-	border-radius: 50%;
-	color:#FFFFFF;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    color: #FFFFFF;
 }
+
 .icon i {
-	font-size:20px;
-	position:absolute;
-	left:9px;
-	top:10px;
+    font-size: 20px;
+    position: absolute;
+    left: 9px;
+    top: 10px;
 }
+
 .icon.social {
-	float:left;
-	margin:0 5px 0 0;
-	cursor:pointer;
-	background-color: #6d6e71 ;
-	color: #fafafa;
-	transition: all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
+    float: left;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    background-color: #6d6e71;
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .icon.social:hover {
-	background-color: #78449c;
+    background-color: #78449c;
 }
-	
+
 .icon.social.fb i {
-	left:13px;
-	top:10px;
+    left: 13px;
+    top: 10px;
 }
+
 .icon.social.tw i {
-	left:11px;
+    left: 11px;
 }
+
 .icon.social.in i {
-	left:11px;
+    left: 11px;
 }
 
 /*----------header navigation menu------*/
@@ -162,7 +169,7 @@ h2 {
 }
 
 .navbar-brand {
-    padding: 10px 
+    padding: 10px
 }
 
 .img-logo {
@@ -181,21 +188,21 @@ h2 {
     border-color: transparent;
     border: hidden;
     transition: all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #fafafa;
     transition: all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-       color: #e0aaaa;
+    color: #e0aaaa;
 }
 
 .navbar-default .navbar-toggle:hover {
@@ -208,17 +215,18 @@ h2 {
 
 .navbar-default .navbar-collapse {
     border-color: transparent
-    
 }
 
 #navbarCollapse {
     position: absolute;
     z-index: 1;
+    background-color: rgb(100, 48, 49);
+    padding: 0;
 }
 
 .menulist {
-       margin-bottom: 20px;
-       padding-left: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
 }
 
 .menuitem a {
@@ -244,30 +252,24 @@ h2 {
     color: #fafafa;
 }
 
-.cta-p-info {
-    margin-top: 30px;
-}
-
-.col-cta-meet-the-band {
-    text-align: center;
-    padding: 0;
-}
-
 .thumbnail-cta {
     border: 0;
     background-color: transparent;
     text-align: center;
 }
 
-.col-cta-bandmember {
-   text-align: center;
-   margin: 2em 0 0 0;
-   padding: 0;
+.row-cta-bandmembers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.col-band-member {
-    width: 100%;
-    height: auto;
+.row-cta-festivals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta-p-info {
@@ -286,14 +288,8 @@ h2 {
     color: #108410;
 }
 
-.col-cta-special-guest {
-    text-align: center;
-    padding: 0;
-    margin-bottom:30px;
-}
-
 .img-cta-special-guest {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -325,28 +321,10 @@ h2 {
     padding: 0;
 }
 
-.section-bandmembers {
-    margin: 10px;
-}
-
 .img-bandmembers {
     max-width: 300px;
     max-height: 300px;
     margin: 30px 30px 0 30px;
-}
-
-.row-eq-height {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    flex-wrap: wrap;
-}
-
-.col-cta-festival-logo .col {
-    display:flex;
-    align-items: center;
-    margin: 10px;
-    border: 1px solid black;
 }
 
 .row-bandmembers {
@@ -377,7 +355,7 @@ h2 {
 
 /*----------Festivals------*/
 
-.container-dates {
+.container-festivals {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,46 +366,32 @@ h2 {
     margin: 0;
 }
 
-.col-dates-header {
+.row-festivals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail-festivals {
+    max-width: 350px;
+    background-color: transparent;
+    border: 0;
+    margin: 50px 10px 10px 10px;
+}
+
+.festival-logo-holder {
+    display: flex;
+    margin: 0 auto;
     padding: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-}
-
-.col-dates-festivals {
-    padding: 0;
-    margin: 0;
-}
-
-.col-dates-logo {
-    text-align: center;
+    align-items: center;
+    height: 200px;
     width: 100%;
-    height: auto;
 }
 
-.col-img-festivals {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
+/*----------Discographhy------*/
 
-.col-dates-type {
-    font-family: Exo;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.col-dates-info {
-    font-family: Exo;
-    font-weight: 300;
-    font-size: 15px;
-}
-
-
-/*----------Catalogue------*/
-.container-catalogue {
+.container-discography {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -436,12 +400,12 @@ h2 {
     color: #fafafa;
 }
 
-.catalogue-header{
+.discography-header {
     padding-top: 30px;
     margin: 0;
 }
 
-.p-catalogue {
+.p-discography {
     padding-bottom: 50px;
 }
 
@@ -449,76 +413,77 @@ h2 {
     margin-left: 50px
 }
 
-.container-albums {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.album-section {
-    padding: 10px;
-}
-
-.row-albums {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
+.row-discog-albums {
+    display: flex;
     flex-wrap: wrap;
-    margin: 10px
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
-.img-album {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 10px 10px 30px;;
-    transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    backface-visibility: hidden;
+.thumbnail-album {
+    max-width: 350px;
+    background-color: transparent;
+    border: 0;
+    margin: 50px 10px 10px 10px;
 }
-    
-.centered {
-    opacity: 0;
+
+.image-wrapper {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.thumbnail-album-data {
     position: absolute;
+    width: 100%;
+    color: black;
+    background-color: grey;
+    opacity: 0.9;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
     transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
     -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
+    visibility: hidden;
 }
 
-.img-album:hover {
-  opacity: 0.5;
+.thumbnail-album-data h5 {
+    margin-left: 25%;
+    font-weight: 500;
+    padding: 0;
+   
 }
 
- .centered:hover {
-  opacity: 1;
+.ul-track-list {
+    list-style: none;
+    padding: 0;
+    margin-left: 25%;
+    font-weight: 500;
 }
 
-.text {
-  background-color: grey;
-  color: black;
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 16px 32px;
-} 
+.image-wrapper:hover .thumbnail-album-data {
+    visibility: visible;
+}
 
 .ol-album-tracks {
     list-style-type: decimal;
 }
 
 .table-singles {
-    margin: 25px 30px 25px;
+    margin-left: 0;
+    margin-right: 30px
 }
 
 .ul-compilation {
@@ -527,13 +492,14 @@ h2 {
 
 
 /*----------History------*/
+
 .container-history {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #ff700d;
     padding: 0;
-    color: #fafafa;   
+    color: #fafafa;
 }
 
 .header-history {
@@ -555,10 +521,10 @@ h2 {
 }
 
 .social-footer {
-     margin:50px auto;
-     text-align:center;
+    margin: 50px auto;
+    text-align: center;
 
-} 
+}
 
 .bandname-footer {
     font-family: 'Fascinate Inline', cursive;
@@ -577,6 +543,7 @@ h3 img {
 }
 
 /* Buttons and Dividers */
+
 .btn--cta {
     font-weight: bold;
     border-radius: 24px;
@@ -617,9 +584,13 @@ h3 img {
         width: 100%;
         margin-top: 30px;
     }
-    
+
     .bandname {
-        margin-top: 75px;
+        margin-top: 175px;
+    }
+    
+    #navbarCollapse {
+        background-color: transparent;
     }
 
 }
