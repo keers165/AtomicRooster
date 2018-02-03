@@ -502,12 +502,37 @@ h2 {
     color: #fafafa;
 }
 
-.header-history {
-    text-align: center;
+.iframe-history {
+    width: 100%;
+    height: auto;
 }
 
-.brief-h {
-    text-align: center;
+.pageheader {
+    margin-bottom: 50px;
+}
+
+.figure-history {
+    margin: 0 auto;
+}
+
+.history-data {
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
+}
+
+.ul-thumbnails-history {
+    padding: 0;
+}
+
+.thumbnail-history {
+    background-color: transparent;
+    border: 0;
+}
+
+.img-history {
+    max-height: 150px;
+    width: 100%;
 }
 
 
@@ -578,6 +603,35 @@ h3 img {
 .block-divider--green {
     background-color: #108410
 }
+
+
+/*----------I Frames------
+
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+ 
+
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+ 
+
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+ 
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 80%;
+  height: auto;
+}
+----*/
+/*----------Media Queries------*/
 
 @media(min-width:768px) {
     .table-bandmembers-data {
