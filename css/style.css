@@ -226,7 +226,8 @@ h2 {
 
 .menulist {
     margin-bottom: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
+    margin-right: 10px;
 }
 
 .menuitem a {
@@ -502,13 +503,19 @@ h2 {
     color: #fafafa;
 }
 
+.blockquote-history {
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
+}
+
 .iframe-history {
     width: 100%;
     height: auto;
 }
 
 .pageheader {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .figure-history {
@@ -516,19 +523,30 @@ h2 {
 }
 
 .history-data {
+    display: block;
     margin:20px 20px 30px 20px;
     text-align: justify;
     text-justify: inter-word ;
 }
 
-.ul-thumbnails-history {
-    padding: 0;
-}
-
 .thumbnail-history {
     background-color: transparent;
     border: 0;
+    padding: 0;
 }
+
+.caption-thumbnail-history h3 {
+    margin-top: 0;
+}
+
+.ul-thumbnails-history {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
 
 .img-history {
     max-height: 150px;
@@ -572,6 +590,11 @@ h3 img {
 .btn--cta {
     font-weight: bold;
     border-radius: 24px;
+}
+
+.btn--history {
+    font-weight: bold;
+    border-radius: 20px;
 }
 
 .btn--green {
