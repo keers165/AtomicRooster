@@ -2,6 +2,7 @@
 
 body {
     font-family: "Roboto Slab", sans-serif;
+    color: #fafafa;
 }
 
 /*----------general------*/
@@ -35,26 +36,32 @@ h2 {
 /*----------Header Images------*/
 
 .img-header-home {
-    width: 80%;
-    height: auto;
+    max-width: 60%;
+    max-height: 300px;
     margin-bottom: 10px;
 }
 
 .img-header-band {
-    width: 80%;
-    height: auto;
+    max-width: 60%;
+    max-height: 300px;
     margin-bottom: 10px;
 }
 
 .img-header-festivals {
-    width: 80%;
-    height: auto;
+    max-width: 60%;
+    max-height: 300px;
     margin-bottom: 10px;
+}
+
+.img-header-discog {
+    max-width: 60%;
+    max-height: 300px;
+    margin-bottom: 10px;   
 }
 
 
 .wrapper {
-    height: 100vh;
+   /* height: 100vh;*/
     position: relative;
     display: flex;
     flex-direction: column;
@@ -71,7 +78,7 @@ h2 {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(5, 75, 94, 0.5);
+    background-color: rgba(5, 75, 94, 0.1);
 }
 
 /*----------header------*/
@@ -90,7 +97,7 @@ h2 {
 .bandname {
     font-family: 'Fascinate Inline', cursive;
     font-size: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 30px;
 
 }
@@ -175,7 +182,7 @@ h2 {
 .img-logo {
     width: 50px;
     height: 50px;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -259,6 +266,10 @@ h2 {
     text-align: center;
 }
 
+.caption-thumbnail-cta h3 {
+    color: #fafafa;
+}
+
 .row-cta-bandmembers {
     display: flex;
     flex-wrap: wrap;
@@ -322,10 +333,22 @@ h2 {
     padding: 0;
 }
 
-.img-bandmembers {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 30px 30px 0 30px;
+.band-data {
+    display: block;
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
+}
+
+.blockquote-band {
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
+}
+
+.img-header-band {
+    max-width: 400px;
+    height: auto;
 }
 
 .row-bandmembers {
@@ -335,14 +358,17 @@ h2 {
     justify-content: center;
 }
 
+.img-bandmembers {
+    width: 350px;
+    padding: 20px;
+}
+
 .blockquote-bandmembers {
     border: 0;
     padding: 0;
     text-align: center;
     font-size: 25;
 }
-
-
 
 .table-bandmembers-data {
     display: block;
@@ -491,7 +517,6 @@ h2 {
     margin-bottom: 50px
 }
 
-
 /*----------History------*/
 
 .container-history {
@@ -537,6 +562,11 @@ h2 {
 
 .caption-thumbnail-history h3 {
     margin-top: 0;
+    color: #fafafa;
+}
+
+.caption-thumbnail-history p {
+    color: #fafafa;
 }
 
 .ul-thumbnails-history {
@@ -559,7 +589,7 @@ h2 {
 .container-footer {
     min-height: 200px;
     position: relative;
-    background-color: #5a2b32;
+    background-color: #b0150a;
     color: #fafafa;
 }
 
@@ -663,7 +693,7 @@ h3 img {
     }
 
     .bandname {
-        margin-top: 175px;
+        margin-top: 50px;
     }
     
     #navbarCollapse {
