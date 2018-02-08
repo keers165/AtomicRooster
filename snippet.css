@@ -1,0 +1,23 @@
+section {
+    margin: 10px;
+}
+
+.row-eq-height{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-wrap: wrap;
+    border:1px solid blue;
+}
+
+.col {
+    border:2px solid red;
+    display:flex;
+    align-items:center;
+    margin: 10px;
+}
+
+.col-bandmembers-data {
+    width: 100%;
+}
+

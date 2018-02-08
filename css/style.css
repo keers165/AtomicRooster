@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700 |Fascinate+Inline| Exo:100,200,300,400,500,600,700 | Anton:400');
 
+body {
+    font-family: "Roboto Slab", sans-serif;
+    color: #fafafa;
+}
 
 /*----------general------*/
 
@@ -13,49 +17,89 @@ h2 {
     font-size: 50px;
 }
 
+.h4- {
+    margin-left: 50px
+}
+
+.row {
+    margin: 0;
+}
 
 /*----------containers------*/
 
-.container-header, .container-section, .container-footer {
+.container-header,
+.container-footer {
     margin: 0;
+    padding: 0;
+}
+
+/*----------Header Images------*/
+
+.img-header-home {
+    max-width: 60%;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.img-header-band {
+    max-width: 60%;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.img-header-festivals {
+    max-width: 60%;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.img-header-discog {
+    max-width: 60%;
+    max-height: 300px;
+    margin-bottom: 10px;   
+}
+
+
+.wrapper {
+   /* height: 100vh;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url(../assets/images/Red-Cloud-1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(5, 75, 94, 0.1);
 }
 
 /*----------header------*/
 
 .container-header {
+    height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
-    background-color: #debfbf;
-}
-
-.img-header {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-
-
-.jumbotron {
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    color: #000;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fafafa;
 }
 
 .bandname {
     font-family: 'Fascinate Inline', cursive;
     font-size: 50px;
-}
-/*
-h1 img {}
-*/
-.founders {
-    font-family: "Exo";
-    font-size: 25px;
-    font-weight: 400;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
 }
 
 .anniversary {
@@ -66,52 +110,59 @@ h1 img {}
 }
 
 
-/*----------header social links------*/
+/*----------social links------*/
+
 .social-header {
     margin: 30px auto;
     padding: 0;
-    text-align:center;
+    text-align: center;
 }
 
 .icon {
-	position:relative;
-	text-align:center;
-	width: 40px;
-	height: 40px;
-	padding:20px;
-	border-radius: 50%;
-	color:#FFFFFF;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    color: #FFFFFF;
 }
+
 .icon i {
-	font-size:20px;
-	position:absolute;
-	left:9px;
-	top:10px;
+    font-size: 20px;
+    position: absolute;
+    left: 9px;
+    top: 10px;
 }
+
 .icon.social {
-	float:left;
-	margin:0 5px 0 0;
-	cursor:pointer;
-	background:#6d6e71 ;
-	color:#262626;
-	transition: all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-webkit-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
+    float: left;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    background-color: #6d6e71;
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
-	
+
+.icon.social:hover {
+    background-color: #78449c;
+}
+
 .icon.social.fb i {
-	left:13px;
-	top:10px;
+    left: 13px;
+    top: 10px;
 }
+
 .icon.social.tw i {
-	left:11px;
+    left: 11px;
 }
+
 .icon.social.in i {
-	left:11px;
+    left: 11px;
 }
-
-
 
 /*----------header navigation menu------*/
 
@@ -124,27 +175,71 @@ h1 img {}
     border: 0;
 }
 
-.navbar-toggle {
+.navbar-brand {
+    padding: 10px
+}
+
+.img-logo {
+    width: 50px;
+    height: 50px;
     position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar-section {
+    padding: 0;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    border: hidden;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fafafa;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #e0aaaa;
 }
 
 .navbar-default .navbar-toggle:hover {
-    background-color: black;
+    background-color: #9e5a5a;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
 
+.navbar-default .navbar-collapse {
+    border-color: transparent
+}
 
+#navbarCollapse {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(100, 48, 49);
+    padding: 0;
+}
 
 .menulist {
-       margin-bottom: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    margin-right: 10px;
 }
 
 .menuitem a {
     text-decoration: none;
-    color: #000;
+    color: #fafafa;
     font-family: Exo;
     font-weight: 500;
     font-size: 20px;
@@ -152,175 +247,361 @@ h1 img {}
     padding-right: 20px;
 }
 
-/*----------News------*/
+/*----------CTA------*/
 
-.container-news {
-    display: block;
-    min-height: 700px;
+.container-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
+}
+
+.thumbnail-cta {
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.caption-thumbnail-cta h3 {
+    color: #fafafa;
+}
+
+.row-cta-bandmembers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-cta-festivals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-p-info {
+    text-align: center;
+    font-family: Exo;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+.cta-p-info a {
+    text-decoration: none;
+    font-family: Exo;
+    font-size: 20px;
+    font-weight: bold;
+    color: #108410;
+}
+
+.img-cta-special-guest {
+    width: 80%;
+    height: auto;
+}
+
+.col-cta-festivals {
+    text-align: center;
+}
+
+.col-cta-festival-logo {
+    padding: 10px;
+}
+
+.img-cta-festivals {
     width: 100%;
-    position: relative;
-    background-color: #c0bbba;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-align: center;
+    height: auto;
+    display: block;
+    margin: auto;
 }
 
+/*----------Band------*/
 
-/*----------Catalogue------*/
-.container-wrapper {
+.container-band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff700d;
+    color: #fafafa;
     margin: 0;
-    background-color: DodgerBlue;
+    padding: 0;
+}
+
+.band-data {
+    display: block;
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
+}
+
+.blockquote-band {
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
+}
+
+.img-header-band {
+    max-width: 400px;
+    height: auto;
+}
+
+.row-bandmembers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-bandmembers {
+    width: 350px;
+    padding: 20px;
+}
+
+.blockquote-bandmembers {
+    border: 0;
+    padding: 0;
     text-align: center;
+    font-size: 25;
 }
 
-.container-catalogue {
-  display: flex;
-  flex-wrap: wrap;
+.table-bandmembers-data {
+    display: block;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 0;
+    font-size: 20px;
+    color: #fafafa;
+    width: 70%;
 }
 
-.catalogue-header{
+/*----------Festivals------*/
+
+.container-festivals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
+    margin: 0;
+}
+
+.row-festivals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbnail-festivals {
+    max-width: 350px;
+    background-color: transparent;
+    border: 0;
+    margin: 50px 10px 10px 10px;
+}
+
+.festival-logo-holder {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+/*----------Discographhy------*/
+
+.container-discography {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
+}
+
+.discography-header {
     padding-top: 30px;
     margin: 0;
 }
 
-
-.p-catalogue {
+.p-discography {
     padding-bottom: 50px;
 }
 
-.album-section {
-    position: relative;
-    width: 350px;
-    margin: 10px;
-    color: red;
-    text-align: center;
-    font-size: 30px;
+.h4-discog {
+    margin-left: 50px
 }
 
-.img-album {opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    backface-visibility: hidden;
+.row-discog-albums {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
-    
-.centered {
-    opacity: 0;
+
+.thumbnail-album {
+    max-width: 350px;
+    background-color: transparent;
+    border: 0;
+    margin: 50px 10px 10px 10px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.thumbnail-album-data {
     position: absolute;
+    width: 100%;
+    color: black;
+    background-color: grey;
+    opacity: 0.9;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
     transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
     -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
+    visibility: hidden;
 }
 
-.album-section:hover .img-album {
-  opacity: 0.5;
-}
-
-.album-section:hover .centered {
-  opacity: 1;
-}
-
-.text {
-  background-color: transparent;
-  color: black;
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 25px;
-  font-weight: 500;
-  padding: 16px 32px;
-} 
-
-/*----------Dates------*/
-
-.container-dates {
-    margin: 0;
-    padding-bottom: 50px;
-}
-
-.header-dates {
-    text-align: center;
-}
-
-.row-caption {
-    text-transform: uppercase;
-    font-family: Exo, sans-serif;
+.thumbnail-album-data h5 {
+    margin-left: 25%;
     font-weight: 500;
-    padding-bottom: 20px;
-}
-
-.row-dates {
-    min-height: 200px;
-    padding-bottom: 10px;
-}
-
-.col-img {
-    width: 100%;
-    height: auto;
     padding: 0;
-    margin: 0;
+   
 }
 
-.col02-dates, .col03-dates, .col04-dates {
-    display: table-cell;
-    vertical-align: middle;
+.ul-track-list {
+    list-style: none;
+    padding: 0;
+    margin-left: 25%;
+    font-weight: 500;
+}
+
+.image-wrapper:hover .thumbnail-album-data {
+    visibility: visible;
+}
+
+.ol-album-tracks {
+    list-style-type: decimal;
+}
+
+.table-singles {
+    margin-left: 0;
+    margin-right: 30px
+}
+
+.ul-compilation {
+    margin-bottom: 50px
 }
 
 /*----------History------*/
-.header-history {
-    text-align: center;
+
+.container-history {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff700d;
+    padding: 0;
+    color: #fafafa;
 }
 
-.brief-h {
-    text-align: center;
+.blockquote-history {
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
 }
 
-.col-bm {
-    background-color: grey;
-}
-
-
-.container-band {
-    margin: 0;
-    padding-bottom: 50px;
-}
-
-.row-band-members {
-    padding-bottom: 30px;
-}
-
-.img-band {
+.iframe-history {
     width: 100%;
     height: auto;
 }
+
+.pageheader {
+    margin-bottom: 20px;
+}
+
+.figure-history {
+    margin: 0 auto;
+}
+
+.history-data {
+    display: block;
+    margin:20px 20px 30px 20px;
+    text-align: justify;
+    text-justify: inter-word ;
+}
+
+.thumbnail-history {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.caption-thumbnail-history h3 {
+    margin-top: 0;
+    color: #fafafa;
+}
+
+.caption-thumbnail-history p {
+    color: #fafafa;
+}
+
+.ul-thumbnails-history {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+
+.img-history {
+    max-height: 150px;
+    width: 100%;
+}
+
 
 /*----------footer------*/
 
 .container-footer {
     min-height: 200px;
     position: relative;
-    background-color: #debfbf;
+    background-color: #b0150a;
+    color: #fafafa;
 }
 
 .social-footer {
-     margin:50px auto;
-     text-align:center;
+    margin: 50px auto;
+    text-align: center;
 
-} 
+}
 
 .bandname-footer {
     font-family: 'Fascinate Inline', cursive;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 h3 img {
@@ -330,10 +611,93 @@ h3 img {
 
 .founders-footer {
     font-family: "Exo";
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 400;
 }
 
-@media(min-width:992px) {
+/* Buttons and Dividers */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+.btn--history {
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.btn--green {
+    color: #fafafa;
+    background-color: #108410;
+    border-color: #108410;
+    transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+}
+
+.btn--green:hover,
+.btn--green:active,
+.btn--green:focus,
+.btn--green:active:focus {
+    background-color: #438643;
+    border-color: #438643;
+    color: #fafafa;
+}
+
+.block-divider {
+    width: 125px;
+    height: 5px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.block-divider--green {
+    background-color: #108410
+}
+
+
+/*----------I Frames------
+
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+ 
+
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+ 
+
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+ 
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 80%;
+  height: auto;
+}
+----*/
+/*----------Media Queries------*/
+
+@media(min-width:768px) {
+    .table-bandmembers-data {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .bandname {
+        margin-top: 50px;
+    }
     
+    #navbarCollapse {
+        background-color: transparent;
+    }
+
 }
