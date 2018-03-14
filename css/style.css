@@ -33,26 +33,36 @@ h2 {
     padding: 0;
 }
 
+.container-header {
+    /*height: 100vh;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fafafa;
+}
+
+.container-cta,
+.container-band,
+.container-festivals,
+.container-discography,
+.container-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f0f0d;
+    padding: 0;
+    color: #fafafa;
+    margin: 0;
+}
 /*----------Header Images------*/
 
-.img-header-home {
-    max-width: 60%;
-    max-height: 300px;
-    margin-bottom: 10px;
-}
-
-.img-header-band {
-    max-width: 60%;
-    max-height: 300px;
-    margin-bottom: 10px;
-}
-
-.img-header-festivals {
-    max-width: 60%;
-    max-height: 300px;
-    margin-bottom: 10px;
-}
-
+.img-header-home,
+.img-header-band,
+.img-header-festivals,
 .img-header-discog {
     max-width: 60%;
     max-height: 300px;
@@ -78,28 +88,16 @@ h2 {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(5, 75, 94, 0.1);
+    background-color: rgba(5, 75, 94, 0.3);
 }
 
 /*----------header------*/
-
-.container-header {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    color: #fafafa;
-}
 
 .bandname {
     font-family: 'Fascinate Inline', cursive;
     font-size: 50px;
     margin-top: 10px;
     margin-bottom: 30px;
-
 }
 
 .anniversary {
@@ -249,16 +247,7 @@ h2 {
 
 /*----------CTA------*/
 
-.container-cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: #ff700d;
-    padding: 0;
-    color: #fafafa;
-}
+
 
 .thumbnail-cta {
     border: 0;
@@ -322,16 +311,7 @@ h2 {
 
 /*----------Band------*/
 
-.container-band {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ff700d;
-    color: #fafafa;
-    margin: 0;
-    padding: 0;
-}
+
 
 .band-data {
     display: block;
@@ -382,16 +362,7 @@ h2 {
 
 /*----------Festivals------*/
 
-.container-festivals {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ff700d;
-    padding: 0;
-    color: #fafafa;
-    margin: 0;
-}
+
 
 .row-festivals {
     display: flex;
@@ -404,28 +375,31 @@ h2 {
     max-width: 350px;
     background-color: transparent;
     border: 0;
-    margin: 50px 10px 10px 10px;
+    margin: 0 auto;
 }
 
 .festival-logo-holder {
     display: flex;
     margin: 0 auto;
     padding: 0;
+    justify-content: center;
     align-items: center;
     height: 200px;
     width: 100%;
 }
 
-/*----------Discographhy------*/
-
-.container-discography {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #ff700d;
-    padding: 0;
+.h4-caption-festival {
     color: #fafafa;
 }
+
+.table-festivals-data {
+    color: #fafafa;
+}    
+
+/*----------Discographhy------*/
+
+
+
 
 .discography-header {
     padding-top: 30px;
@@ -472,6 +446,7 @@ h2 {
 
 .thumbnail-album-data {
     position: absolute;
+    display: block;
     width: 100%;
     color: black;
     background-color: grey;
@@ -519,15 +494,6 @@ h2 {
 
 /*----------History------*/
 
-.container-history {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #ff700d;
-    padding: 0;
-    color: #fafafa;
-}
-
 .blockquote-history {
     margin:20px 20px 30px 20px;
     text-align: justify;
@@ -554,8 +520,15 @@ h2 {
     text-justify: inter-word ;
 }
 
+.img-history {
+    height: 250px;
+    width: 250px;
+}
+
+
 .thumbnail-history {
     background-color: transparent;
+    text-align: center;
     border: 0;
     padding: 0;
 }
@@ -578,10 +551,6 @@ h2 {
 }
 
 
-.img-history {
-    max-height: 150px;
-    width: 100%;
-}
 
 
 /*----------footer------*/
@@ -691,7 +660,7 @@ h3 img {
         width: 100%;
         margin-top: 30px;
     }
-
+    
     .bandname {
         margin-top: 50px;
     }
