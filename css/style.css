@@ -66,7 +66,8 @@ h2 {
 .img-header-discog {
     max-width: 60%;
     max-height: 300px;
-    margin-bottom: 10px;   
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -315,7 +316,7 @@ h2 {
 
 .band-data {
     display: block;
-    margin:20px 20px 30px 20px;
+    margin:20px 30px 30px 20px;
     text-align: justify;
     text-justify: inter-word ;
 }
@@ -336,6 +337,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 
 .img-bandmembers {
@@ -398,9 +400,6 @@ h2 {
 
 /*----------Discographhy------*/
 
-
-
-
 .discography-header {
     padding-top: 30px;
     margin: 0;
@@ -410,8 +409,9 @@ h2 {
     padding-bottom: 50px;
 }
 
-.h4-discog {
-    margin-left: 50px
+.h3-discog {
+    margin-top: 50px;
+    text-align: center;
 }
 
 .row-discog-albums {
@@ -481,11 +481,6 @@ h2 {
 
 .ol-album-tracks {
     list-style-type: decimal;
-}
-
-.table-singles {
-    margin-left: 0;
-    margin-right: 30px
 }
 
 .ul-compilation {
@@ -668,5 +663,8 @@ h3 img {
     #navbarCollapse {
         background-color: transparent;
     }
-
+    
+    .image-wrapper:hover .thumbnail-album-data {
+    visibility: hidden;
+    }
 }

@@ -1,18 +1,42 @@
+# My First Project
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Using the knowledge gained in the opening lessons
+* HTML5
+* CSS3
+* Bootstrap
+* User Centric FrontEnd
+
+Folllowing the brief as provided I have generated the following scenario for a band that was popular for a short period of time in the early 70's.
+
+## ATOMIC ROOSTER 
+### 50th Anniversary Festival Tour
+
+##### Sections
+
+##### Header & Footer
+>Header
+
+* Bootstrap for the Navigation bar (collapsible burger bar for XS devices)carried through on all pages
+* HTML and CSS for main backgroud image and opaque overlay
+* Main image using bootstrap img-responsive to enable fit for all devices
+
+>Footer
+* Font awesome for social media icons
 
 
-Hi there! Welcome to Cloud9 IDE!
+##### Home - index.html
+>Call to Action page - Summary introduction to all other pages with links for acccess.
+* Bootsrap used for thumbnails, responsive grid and images, modal and buttons
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+##### Band - band.html
 
-Happy coding!
-The Cloud9 IDE team
+##### Festival - festivals.html
+
+##### Discography - discography.html
+
+##### History - history.html
+
+
+
+
+   
