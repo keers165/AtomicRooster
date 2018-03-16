@@ -12,6 +12,7 @@ Folllowing the brief as provided I have generated the following scenario for a b
 ### 50th Anniversary Festival Tour
 
 ##### Sections
+* HTML and CSS used extensively through all pages
 
 ##### Header & Footer
 >Header
@@ -29,14 +30,26 @@ Folllowing the brief as provided I have generated the following scenario for a b
 * Bootsrap used for thumbnails, responsive grid and images, modal and buttons
 
 ##### Band - band.html
+>Atomic Rooster 2016 reformation
+* Bootstrap for thumbnails, responsive grid, table and images
 
 ##### Festival - festivals.html
+>Festival dates and venuses and appearing acts
+* Bootstrap for thumbnails, responsive grid, table and images
 
 ##### Discography - discography.html
+>Listings of Albums , Singles and Compilation Albums
+* Bootstrap for thumbnails, responsive grid, tales and images
 
 ##### History - history.html
+>Summary of the band through the ages
+* Bootstrap for thumbnails, responsive grid and images
 
 
-
+#### Sites used for Reference and Sources
+* Google fonts and images
+* Wikipedia for historical and Discography - https://en.wikipedia.org/wiki/Atomic_Rooster
+* Band History and insights - http://www.angelfire.com/ar2/vincentcrane/
+* Discography - https://www.discogs.com/artist/310381-Atomic-Rooster
 
    
