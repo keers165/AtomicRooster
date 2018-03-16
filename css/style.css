@@ -327,22 +327,12 @@ h2 {
     text-justify: inter-word ;
 }
 
-.img-header-band {
-    max-width: 400px;
-    height: auto;
-}
-
 .row-bandmembers {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 20px;
-}
-
-.img-bandmembers {
-    width: 350px;
-    padding: 20px;
 }
 
 .blockquote-bandmembers {
@@ -352,6 +342,11 @@ h2 {
     font-size: 25;
 }
 
+.col-bandmembers-data {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .table-bandmembers-data {
     display: block;
     margin: 0 auto;
@@ -359,7 +354,6 @@ h2 {
     border: 0;
     font-size: 20px;
     color: #fafafa;
-    width: 70%;
 }
 
 /*----------Festivals------*/
