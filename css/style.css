@@ -21,10 +21,6 @@ h2 {
     margin-left: 50px
 }
 
-.row {
-    margin: 0;
-}
-
 /*----------containers------*/
 
 .container-header,
@@ -310,9 +306,19 @@ h2 {
     margin: auto;
 }
 
+.row-cta-sound {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+}
+
+.col-cta-sound {
+    left: 10%;
+    margin-bottom: 20px;
+}
+
 /*----------Band------*/
-
-
 
 .band-data {
     display: block;
@@ -357,8 +363,6 @@ h2 {
 }
 
 /*----------Festivals------*/
-
-
 
 .row-festivals {
     display: flex;
@@ -477,11 +481,32 @@ h2 {
     list-style-type: decimal;
 }
 
+.row-discog-singles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;   
+}
+
+.singles-section {
+    width: 100%;
+    }
+    
+.table-singles {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .ul-compilation {
     margin-bottom: 50px
 }
 
 /*----------History------*/
+
+.h4-history {
+    margin-top: 30px;
+}
 
 .blockquote-history {
     margin:20px 20px 30px 20px;
@@ -500,6 +525,14 @@ h2 {
 
 .figure-history {
     margin: 0 auto;
+}
+
+.row-history {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;    
 }
 
 .history-data {
@@ -616,19 +649,16 @@ h3 img {
 }
 
 
-/*----------I Frames------
+/*----------I Frames------*/
 
 .intrinsic-container {
-  position: relative;
   height: 0;
   overflow: hidden;
 }
- 
 
 .intrinsic-container-16x9 {
   padding-bottom: 56.25%;
 }
- 
 
 .intrinsic-container-4x3 {
   padding-bottom: 75%;
@@ -636,12 +666,11 @@ h3 img {
  
 .intrinsic-container iframe {
   position: absolute;
-  top:0;
-  left: 0;
-  width: 80%;
-  height: auto;
+  left: 20%;
+  width: 60%;
+  height: 40%;
 }
-----*/
+/*----*/
 /*----------Media Queries------*/
 
 @media(min-width:768px) {
@@ -659,6 +688,15 @@ h3 img {
     }
     
     .image-wrapper:hover .thumbnail-album-data {
-    visibility: hidden;
+        visibility: hidden;
     }
+    
+    .p-discog-albums {
+        display: none;
+    }
+    
+    .table-singles {
+        width: 80%;
+    }
+
 }
