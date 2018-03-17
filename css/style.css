@@ -261,6 +261,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .row-cta-festivals {
@@ -307,15 +308,19 @@ h2 {
     margin: auto;
 }
 
-.row-cta-sound {
+.cta-sounds {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    margin: 10px;
+}
+
+.row-cta-sound {
+    margin: 10px;
 }
 
 .col-cta-sound {
-    left: 10%;
     margin-bottom: 20px;
 }
 
