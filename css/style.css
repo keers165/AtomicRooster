@@ -268,6 +268,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .cta-p-info {
@@ -481,17 +482,9 @@ h2 {
     list-style-type: decimal;
 }
 
-.row-discog-singles {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;   
-}
-
 .singles-section {
     width: 100%;
-    }
+}
     
 .table-singles {
     width: 90%;
@@ -571,9 +564,6 @@ h2 {
     justify-content: center;
     padding: 0;
 }
-
-
-
 
 /*----------footer------*/
 
